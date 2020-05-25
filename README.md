@@ -1,10 +1,10 @@
-# Analyse des Stromverbrauchs in der Schweiz während dem Corona-Lockdown
+# Analyse des Stromverbrauchs in der Schweiz während des Corona-Lockdowns
 
 **Datenquelle(n)**: [swissgrid.ch](https://www.swissgrid.ch/de/home/operation/grid-data.html), [entsoe-e](https://www.entsoe.eu/) 
 
 **Artikel**: [Wird publiziert im Mai 2020](https://www.tagesanzeiger.ch/)
 
-**Code**: [R Script]([elektrizitaet.R](https://github.com/tamedia-ddj/2020_05_Stromverbrauch/blob/master/elektrizitaet.R))
+**Code**: [R Script](elektrizitaet.R)
 
 ## Beschreibung
 
@@ -23,16 +23,6 @@ Die Swissgrid stellt den Gesamtverbrauch der Schweiz für die letzten Jahre [auf
 Jeweils ca. am 10 Arbeitstag des Monats werden die Daten für den letzten Monat im file des aktuellen Jahres hinzugefügt.
 
 Verfügbar sind Gesamtverbrauch in der Schweiz (mit und ohne Pumpspeicherwerke), sowie Verbrauch der einzelnen Kantone (nur inklusive Pumpspeicherwerke). Erläuterungen zu den einzelnen Variablen befinden sich direkt im Excel file.
-
-
-
-| Variable          | Beschreibung                                                 |
-| ----------------- | ------------------------------------------------------------ |
-| `Fahrzeugart`     | [Data_input/IT_19.05.2020.csv](Data_input/IT_19.05.2020.csv) |
-| `Marke`           | Marke des registrierten Fahrzeuges                           |
-| `Marke_und_Typ`   | Marke und Typ des registrierten Fahrzeuges                   |
-| `BFS-Gemeinde-Nr` | BFS-Gemeindenummer der Gemeinde in welcher das Fahrzeug registriert wurde |
-| `Staat_Code`      | Code des Landes in welcher das Fahrzeug registriert wurde    |
 
 
 
@@ -62,14 +52,14 @@ Der Code für die Analyse befindet sich im [R Script]([elektrizitaet.R](https://
 
 ## Resultate
 
-| Land                                  | File                                                         |
+| Resultat                              | File                                                         |
 | ------------------------------------- | ------------------------------------------------------------ |
 | `Übersicht Kantone`                   | [Data_output/Uebersicht_Kantone.csv](Data_output/Uebersicht_Kantone.csv) |
 | `Verlauf absoluter Verbrauch Kantone` | [Data_output/Verlauf_Kantone_absolut.csv](Data_output/Verlauf_Kantone_absolut.csv) |
 | `Verlauf relativer Verbrauch Kantone` | [Data_output/Verlauf_Kantone_relativ.csv](Data_output/Verlauf_Kantone_relativ.csv) |
 | `Verlauf Gesamtverbrauch absolut.csv` | [Data_output/Verlauf_Gesamtverbrauch_absolut.csv](Data_output/Verlauf_Gesamtverbrauch_absolut.csv) |
 
-Die relativen Angaben beziehen sich jeweils auf den Mittelwert Monats Februars 2020.
+Alle absoluten Angaben sind in MWh. Die relativen Angaben beziehen sich jeweils auf den Mittelwert Monats Februars 2020.
 
 In der Übersicht werden die Verbräuche für eine bessere Vergelichbarkeit für eine Standard Woche berechnet, die sich aus 5 Arbeitstagen und 2 Wochenendtagen berechnen.
 
@@ -79,5 +69,4 @@ Die Werte werden pro Woche angegeben, wobei sich das Wochen-Datum auf den ersten
 
 ## Lizenz
 
-*Analyse des Stromverbrauchs in der Schweiz während dem Corona-Lockdown* is free and open source software released under the permissive MIT License.
-
+*Analyse des Stromverbrauchs in der Schweiz während des Corona-Lockdown*s is free and open source software released under the permissive MIT License.
