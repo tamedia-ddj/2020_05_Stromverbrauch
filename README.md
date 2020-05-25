@@ -1,4 +1,4 @@
-# Analyse des Stromverbrauchs in der Schweiz während des Corona-Lockdowns
+# Schweizer Stromverbrauch während des Corona-Lockdowns
 
 **Datenquelle(n)**: [swissgrid.ch](https://www.swissgrid.ch/de/home/operation/grid-data.html), [entsoe-e](https://www.entsoe.eu/) 
 
@@ -69,4 +69,4 @@ Die Werte werden pro Woche angegeben, wobei sich das Wochen-Datum auf den ersten
 
 ## Lizenz
 
-*Analyse des Stromverbrauchs in der Schweiz während des Corona-Lockdown*s is free and open source software released under the permissive MIT License.
+*Schweizer Stromverbrauch während des Corona-Lockdowns* is free and open source software released under the permissive MIT License.
