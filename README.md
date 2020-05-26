@@ -16,19 +16,21 @@ Der Stromverbrauch der Schweiz soll während des Lockdowns soll untersucht werde
 
 Die **Swissgrid** ist die Betreiberin des schweizerischen Übertragungsnetzes.
 
-File: [Data_input/EnergieUebersichtCH-2020_april.xlsx](Data_input/EnergieUebersichtCH-2020_april.xlsx)
-
 Die Swissgrid stellt den Gesamtverbrauch der Schweiz für die letzten Jahre [auf ihrer Webseite](https://www.swissgrid.ch/de/home/operation/grid-data.html) in Form eines Excel files zur Verfügung.
 
 Jeweils ca. am 10 Arbeitstag des Monats werden die Daten für den letzten Monat im file des aktuellen Jahres hinzugefügt.
 
 Verfügbar sind Gesamtverbrauch in der Schweiz (mit und ohne Pumpspeicherwerke), sowie Verbrauch der einzelnen Kantone (nur inklusive Pumpspeicherwerke). Erläuterungen zu den einzelnen Variablen befinden sich direkt im Excel file.
 
-
+File: [Data_input/EnergieUebersichtCH-2020_april.xlsx](Data_input/EnergieUebersichtCH-2020_april.xlsx)
 
 ### Entso-e
 
 Die **ENTSO-E** (European Network of Transmission System Operators for Electricity) ist die ist der europäische Verband in der alle [Übertragungsnetzbetreiber](https://de.wikipedia.org/wiki/Übertragungsnetzbetreiber) (ÜNB) Pflichtmitglieder sind.
+
+Die ENTSO-E stellt Daten zum europaweiten Stromverbrauch auf ihrer [Transparency Webseite](https://transparency.entsoe.eu/) zur Verfügung. Um Daten zu beziehen muss man ein Login erstellen. 
+
+Die Daten liegen in Stunden- oder Viertelstundenauflösung bis zur aktuellen Tageszeit vor. Bei den Daten die im aktuellen Monat liegen, handelt es sich aber um Prognosewerte und nicht um effektiv gemessenen Werte. Sobald effektive Werte vorliegen, werden diese Ausgetauscht. (Im Falle der Schweizer Daten von der Swissgrid ca. am 10. Arbeitstag im neuen Monat). Die Prognosedaten werden für diese Analyse nicht berücksichtigt.
 
 Files: 
 
@@ -41,15 +43,11 @@ Files:
 | `Frankreich`  | [Data_input/FR_19.05.2020.csv](Data_input/FR_19.05.2020.csv) |
 | `Grossbritannien`  | [Data_input/UK_19.05.2020.csv](Data_input/UK_19.05.2020.csv) |
 
-Die ENTSO-E stellt Daten zum europaweiten Stromverbrauch auf ihrer [Transparency Webseite](https://transparency.entsoe.eu/) zur Verfügung. Um Daten zu beziehen muss man ein Login erstellen. 
-
-Die Daten liegen in Stunden- oder Viertelstundenauflösung bis zur aktuellen Tageszeit vor. Bei den Daten die im aktuellen Monat liegen, handelt es sich aber um Prognosewerte und nicht um effektiv gemessenen Werte. Sobald effektive Werte vorliegen, werden diese Ausgetauscht. (Im Falle der Schweizer Daten von der Swissgrid ca. am 10. Arbeitstag im neuen Monat). Die Prognosedaten werden für diese Analyse nicht berücksichtigt.
-
-
 
 ## Analyse
 
 Der Code für die Analyse befindet sich im [R Script]([elektrizitaet.R](https://github.com/tamedia-ddj/2020_05_Stromverbrauch/blob/master/elektrizitaet.R)).
+
 
 ## Resultate
 
