@@ -39,6 +39,7 @@ Files:
 | `Italien`     | [Data_input/IT_19.05.2020.csv](Data_input/IT_19.05.2020.csv) |
 | `Schweden`    | [Data_input/SE_19.05.2020.csv](Data_input/SE_19.05.2020.csv) |
 | `Frankreich`  | [Data_input/FR_19.05.2020.csv](Data_input/FR_19.05.2020.csv) |
+| `Grossbritannien`  | [Data_input/UK_19.05.2020.csv](Data_input/UK_19.05.2020.csv) |
 
 Die ENTSO-E stellt Daten zum europaweiten Stromverbrauch auf ihrer [Transparency Webseite](https://transparency.entsoe.eu/) zur Verfügung. Um Daten zu beziehen muss man ein Login erstellen. 
 
